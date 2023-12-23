@@ -4,15 +4,30 @@ import LoginOp from './pages/LoginOp';
 import Register from './pages/Register';
 import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ProtectedRoute from './components/ProtectedRoute';
+import PublicRoute from './components/PublicRoute';
 function App() {
+
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element = {<LoginOp/> }></Route>
-        <Route path='/signup' element = {<Register/> }></Route>
-        <Route path='/home' element = {<Home/> }></Route>
-        <Route path='*' element = {<LoginOp/> }></Route>
+        <Route path='/login' element = {
+        <PublicRoute>
+            <LoginOp/> 
+        </PublicRoute>
+        }/>
+        <Route path='/signup' element = {
+        <PublicRoute>
+          <Register/>
+        </PublicRoute>
+        }/>
+        <Route path='/' element = {
+        <ProtectedRoute>
+          <Home/>
+        </ProtectedRoute>
+        }
+        />
       </Routes>
     </BrowserRouter>
     </>

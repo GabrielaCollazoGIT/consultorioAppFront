@@ -33,12 +33,8 @@ const onfinishHandler = async (e) =>{
             localStorage.setItem("token", responseData.token)
         
         alert('login.....') // eo c0digo que sigue no se ejecuta  y se dispara el catch
-        navigate('/home');
-        }else{
-            console.log(response.token);
-
+        navigate('/');
         }
-            
         
         } catch (error) {
         console.log(error);

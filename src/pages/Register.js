@@ -81,7 +81,7 @@ const onfinishHandler = async (e) =>{
                         <button className="btn btn-info">Registrarse</button>
                     </div>
                     <p className="text-rigth">
-                        Return to <Link to="/"
+                        Return to <Link to="/login"
                         >Login</Link>
                     </p>
                 </form>
