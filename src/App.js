@@ -6,12 +6,18 @@ import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
+import Navbar from './components/Navbar';
 function App() {
 
   return (
     <>
+     <Navbar/>
     <BrowserRouter>
-      <Routes>
+      <main>
+
+
+<Routes>
+    
         <Route path='/login' element = {
         <PublicRoute>
             <LoginOp/> 
@@ -28,7 +34,8 @@ function App() {
         </ProtectedRoute>
         }
         />
-      </Routes>
+  </Routes>
+      </main>
     </BrowserRouter>
     </>
   );
