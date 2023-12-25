@@ -6,10 +6,13 @@ import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ProtectedRoute from './components/ProtectedRoute';
 import PublicRoute from './components/PublicRoute';
+
+
 function App() {
 
   return (
     <>
+  
     <BrowserRouter>
       <Routes>
         <Route path='/login' element = {

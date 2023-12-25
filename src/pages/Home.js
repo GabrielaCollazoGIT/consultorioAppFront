@@ -1,11 +1,15 @@
 import React, {useEffect} from 'react';
 
+import Layout from '../components/Layout';
+
+
+
 const Home = () => {
 
     const getUserData = async () =>{
         try {
-            const response = await fetch("http://localhost:5000/api/users/getUsers",{  // este fetch apunta al backend para login, mediante la ruta url
-            method:'POST',
+            const response = await fetch("http://localhost:5000/api/users/getUserById",{  // este fetch apunta al backend para login, mediante la ruta url
+            method:'GET',
             headers: {
             Authorization: "Bearer " + localStorage.getItem('token'),
             },
@@ -23,9 +27,12 @@ const Home = () => {
         },[]);
 
     return(
-        <div>
-            <h1>Home Page</h1>
-        </div>
+    <> 
+        
+        <Layout/>
+
+        <h1>HOme</h1>
+        </>
     );
 
 };

@@ -1,0 +1,14 @@
+.body{
+    background: url("https://img.freepik.com/foto-gratis/ciencia-biotecnologia-genetica-adn-manos-cientifico-remix-tecnologia-disruptiva_53876-126745.jpg?size=626&ext=jpg&ga=GA1.2.1110870412.1703208842&semt=ais") rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:991px){
+    .sidebar{
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+}

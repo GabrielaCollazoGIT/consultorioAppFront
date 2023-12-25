@@ -1,12 +1,14 @@
 import React from "react";
-
+import '../components/Layout.css'
 const Layout = ({children}) =>{
     return(
         <>
         <div className="main">
             <div className="layout">
                 <div className="sidebar">
-                    <div className="logo">Logo</div>
+                    <div className="logo">MENU</div>
+                    
+                    <hr/>
                     <div className="menu">Menu</div>
                 </div>
                 <div className="content">
