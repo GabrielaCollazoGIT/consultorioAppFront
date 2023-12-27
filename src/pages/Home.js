@@ -1,4 +1,6 @@
 import React, {useEffect} from 'react';
+import '../pages/style.css';
+import { NavBar } from '../components/NavBar';
 
 const Home = () => {
 
@@ -23,6 +25,7 @@ const Home = () => {
         },[]);
     return(
         <div>
+        <NavBar></NavBar>
             <h1>Home Page</h1>
         </div>
     );

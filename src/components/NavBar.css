@@ -139,31 +139,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before{
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     border-color: transparent;
 }
-.body-background {
-    background-color: #f0f0f0; /* Color de fondo */
-    
-   /* background-image: url("https://img.freepik.com/vector-gratis/fondo-color-azul-ciencia-medica-linea-latido-corazon_1055-10330.jpg?size=626&ext=jpg&ga=GA1.2.1110870412.1703208842&semt=ais");*/ /* URL de la imagen de fondo */
-    background-image: url("https://img.freepik.com/foto-gratis/ciencia-biotecnologia-genetica-adn-manos-cientifico-remix-tecnologia-disruptiva_53876-126745.jpg?size=626&ext=jpg&ga=GA1.2.1110870412.1703208842&semt=ais");
-    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
-    /* Otros estilos de fondo que desees agregar */
-}
-
-    .form-container {
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 20px;
-        border-radius: 8px;
-        width: 400px; /* Ajustar el ancho del formulario */
-        margin: auto;
-    }
-
-@media screen and (max-width: 1000px) {
-    .form_container{
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .form_container{
-        width: 65%;
-    }
-}
