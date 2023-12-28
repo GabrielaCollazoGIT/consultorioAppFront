@@ -36,7 +36,7 @@ const tick = () =>{
     }
 }
 
- /*    const getUserData = async () =>{
+    const getUserData = async () =>{
         try {
             const response = await fetch("http://localhost:5000/api/users/info",{  // este fetch apunta al backend para login, mediante la ruta url
             method:'GET',
@@ -55,7 +55,7 @@ const tick = () =>{
         useEffect(() => {
             getUserData();
         },[]);
-         */
+        
     return(
     <section className='banner' id='home'>
         <Container>
