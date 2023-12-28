@@ -40,6 +40,7 @@
 
 .navbar-nav .nav-item.dropdown .dropdown-menu {
     text-align: center;
+    
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-item {
@@ -143,7 +144,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     background-color: #f0f0f0; /* Color de fondo */
     
    /* background-image: url("https://img.freepik.com/vector-gratis/fondo-color-azul-ciencia-medica-linea-latido-corazon_1055-10330.jpg?size=626&ext=jpg&ga=GA1.2.1110870412.1703208842&semt=ais");*/ /* URL de la imagen de fondo */
-    background-image: url("https://img.freepik.com/foto-gratis/ciencia-biotecnologia-genetica-adn-manos-cientifico-remix-tecnologia-disruptiva_53876-126745.jpg?size=626&ext=jpg&ga=GA1.2.1110870412.1703208842&semt=ais");
+   
     background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
     /* Otros estilos de fondo que desees agregar */
 }

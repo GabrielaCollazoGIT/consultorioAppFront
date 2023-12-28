@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import '../pages/style.css';
+
 import { Link, useNavigate} from "react-router-dom";
 
 const LoginOp = ()=>{
@@ -40,7 +40,6 @@ const onfinishHandler = async (e) =>{
         console.log(error);
         }
 }
-
 
 
     return(
