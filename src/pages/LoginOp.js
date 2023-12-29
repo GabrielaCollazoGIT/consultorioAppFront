@@ -29,13 +29,14 @@ const onfinishHandler = async (e) =>{
         })
         const responseData = await response.json();
         if(response.ok){// statuscode
-
             localStorage.setItem("token", responseData.token)
-        
         alert('Ingresando.....') // eo c0digo que sigue no se ejecuta  y se dispara el catch
         navigate('/');
         }
-        
+        else{
+            alert(responseData.error);
+        }
+    
         } catch (error) {
         console.log(error);
         }

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import '../pages/style.css';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 
 const Register = () => {
+    const navigate = useNavigate();
     const [name, setName] = useState('');
     const [dni, setDni] = useState('');
     const [email, setEmail] = useState('');
@@ -29,8 +30,13 @@ const onfinishHandler = async (e) =>{
             password:password        // mando estos atributos porq son los que espera recibir el Backend...
         }), // si esta tdo bien lo valida el botton submit
         })
+        const responseData = await response.json();
         if(!response.ok){// statuscode
+            alert(responseData.error);
         throw new Error(); // eo c0digo que sigue no se ejecuta  y se dispara el catch
+        }else{
+            alert('Registrado Correctamente, por favor inicia sesion') // eo c0digo que sigue no se ejecuta  y se dispara el catch
+            navigate('/login');
         }
     
         

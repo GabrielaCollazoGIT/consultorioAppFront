@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from 'react';
-import { Nav,Container,Navbar } from 'react-bootstrap'
+import { Nav,Container,Navbar,NavDropdown } from 'react-bootstrap'
 import logo from '../assets/Logo1.jpg';
-import '../App.css'
+
 
 
 export const NavBar = () => {
@@ -26,7 +26,7 @@ const onScroll = () =>{
 },[])
 
     return (
-        <Navbar expand="lg" className={scrolled ? 'scrolled': ''}>
+        <Navbar expand="lg" variant='darck' className={scrolled ? 'scrolled': ''}>
         <Container>
             <Navbar.Brand href="#home">
                 <img src={logo} width="100" alt='Logo' />
@@ -35,12 +35,23 @@ const onScroll = () =>{
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
 
-                <Nav.Link href="/"className={activeLink === 'home' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
-                <Nav.Link href="/turnos"className={activeLink === 'turnos' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('turnos')} >Turnos</Nav.Link>
-                <Nav.Link href="/especialidades"className={activeLink === 'especialidades' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('especialidades')} >Especialidades</Nav.Link>
-                <Nav.Link href="/doctor"className={activeLink === 'profesionales' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('especialidades')}  >Profesionales</Nav.Link>
-                <Nav.Link href="/login"className={activeLink === 'login' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('login')}  >Iniciar Sesión</Nav.Link>
-                <Nav.Link href="/signup"className={activeLink === 'signup' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('signup')} >Registrarse</Nav.Link>
+                    <Nav.Link href="/"className={activeLink === 'home' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
+                    <Nav.Link href="/turnos"className={activeLink === 'turnos' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('turnos')} >Turnos</Nav.Link>
+                    <Nav.Link href="/especialidades"className={activeLink === 'especialidades' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('especialidades')} >Especialidades</Nav.Link>
+                    <Nav.Link href="/doctor"className={activeLink === 'profesionales' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('especialidades')}  >Profesionales</Nav.Link>
+                    <Nav.Link href="/login"className={activeLink === 'login' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('login')}  >Iniciar Sesión</Nav.Link>
+                    <Nav.Link href="/signup"className={activeLink === 'signup' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('signup')} >Registrarse</Nav.Link>
+                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/doctors/new"> Agregar Profesional</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                    Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                </NavDropdown.Item>
+                </NavDropdown>
             </Nav>
             </Navbar.Collapse>
         </Container>
