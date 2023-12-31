@@ -154,7 +154,14 @@ from{
     display: flex;
     align-items: center;
 }
-
+@media (max-width: 1000px) {
+    .navbar-nav .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
 /* Ajustes para el dropdown específicamente */
 .navbar-nav .nav-item.dropdown:hover > .nav-link {
     background-color: transparent; /* Ajusta según tus necesidades */
