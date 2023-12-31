@@ -158,7 +158,7 @@ from{
     .navbar-nav .nav-link {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
         text-align: center;
     }
 }
@@ -361,3 +361,77 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
 .txt-rotate > .wrap{
     border-right: 0.08em solid #666;
 }
+
+
+/* Estilos generales para la sección de profesionales */
+.block.prof-block {
+    padding: 150px 0; /* Ajusta el espacio interno según sea necesario */
+    background-color: #f8f9fa; /* Color de fondo */
+    
+  }
+  
+  .title-holder {
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+  
+  .title-holder h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Color del título */
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #6c757d; /* Color del subtítulo */
+  }
+  
+  /* Estilos para las tarjetas de los profesionales */
+  .holder {
+    margin-bottom: 30px;
+    
+  }
+  
+  .card {
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+    
+}
+  
+  .card:hover {
+    transform: scale(1.05); /* Escala al hacer hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    color: #6c757d; /* Color del texto */
+  }
+  
+  .btn-info {
+    background-color: #17a2b8; /* Color del botón */
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496; /* Color al hacer hover sobre el botón */
+  }
+  
