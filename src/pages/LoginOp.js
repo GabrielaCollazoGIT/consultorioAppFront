@@ -48,7 +48,7 @@ const onfinishHandler = async (e) =>{
         <div className= "login template d-flex justify-content-center align-items-center vh-100">
             <div className="form-container p-5 rounded">
                 <form onSubmit={onfinishHandler}>
-                    <h3>Login</h3>
+                    <h3 className="text-center" >Login</h3>
                     <div className="mb-3">
                         <label htmlFor="email">Email</label>
                         <input type="email" placeholder="Enter Email" className="form-control"required

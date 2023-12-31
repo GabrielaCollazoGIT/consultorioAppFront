@@ -57,7 +57,7 @@ const onfinishHandler = async (e) =>{
             <div className="form-container p-5 rounded">
                 <form onSubmit={onfinishHandler}>
                 
-                    <h3>Registro Usuario</h3>
+                    <h3 className="text-center" >Registro Usuario</h3>
                 
                     <div className="mb-3">
                         <label htmlFor="name">Nombre </label>

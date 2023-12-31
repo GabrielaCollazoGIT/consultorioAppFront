@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Nav,Container,Navbar,NavDropdown } from 'react-bootstrap'
-import logo from '../assets/Logo1.jpg';
+import logo from '../assets/Logo3.jpg';
 
 
 
@@ -25,15 +25,17 @@ const onScroll = () =>{
     return () => window.removeEventListener('scroll',onScroll);
 },[])
 
+
+
     return (
-        <Navbar expand="lg" variant='darck' className={scrolled ? 'scrolled': ''}>
+        <Navbar expand="lg" variant='black' className={scrolled ? 'scrolled': ''}>
         <Container>
             <Navbar.Brand href="#home">
                 <img src={logo} width="100" alt='Logo' />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav"  />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto ">
 
                     <Nav.Link href="/"className={activeLink === 'home' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
                     <Nav.Link href="/turnos"className={activeLink === 'turnos' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('turnos')} >Turnos</Nav.Link>
@@ -41,7 +43,7 @@ const onScroll = () =>{
                     <Nav.Link href="/doctor"className={activeLink === 'profesionales' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('especialidades')}  >Profesionales</Nav.Link>
                     <Nav.Link href="/login"className={activeLink === 'login' ? 'active nabar-link': 'navbar-link'}onClick={() => onUpdateActiveLink('login')}  >Iniciar Sesión</Nav.Link>
                     <Nav.Link href="/signup"className={activeLink === 'signup' ? 'active nabar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('signup')} >Registrarse</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                <NavDropdown title="Profesionales" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/doctors/new"> Agregar Profesional</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                     Another action

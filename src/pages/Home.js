@@ -61,7 +61,7 @@ const tick = () =>{
         <Container>
             <Row className='align-items-center'>
                 <Col xs={12} md={6} xl={7}>
-                    <span className='tagline'>Bienvenidos a tu nuevo cuidado Personal</span>
+                    <span className='tagline special-line'>Bienvenido a tu nuevo cuidado Personal</span>
                     <h1>{`Centro medico especializado en el cuidado de tu Salud.  `}
                     <span className='wrap'>{text}</span>
                     </h1>
