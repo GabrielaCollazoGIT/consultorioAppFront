@@ -362,77 +362,86 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
     border-right: 0.08em solid #666;
 }
 
-
 /* Estilos generales para la sección de profesionales */
 .block.prof-block {
-    padding: 150px 0; /* Ajusta el espacio interno según sea necesario */
+    padding: 10vh 0; /* Ajusta el espacio interno de manera relativa */
     background-color: #f8f9fa; /* Color de fondo */
-    background-image: url('https://img.freepik.com/psd-gratis/pasillo-hospital-lujo-desenfoque-abstracto-ia-generativa_587448-1984.jpg?w=2000&t=st=1704006158~exp=1704006758~hmac=0109ab5e16ed2ad494f3988b5cb9cce9e24d7d8260d25f2a598d49026df51122');
-    
-  }
-  
-  .title-holder {
-    text-align: center;
-    margin-bottom: 30px;
-
-  }
-  
-  .title-holder h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #007bff; /* Color del título */
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #6c757d; /* Color del subtítulo */
-  }
-  
-  /* Estilos para las tarjetas de los profesionales */
-  .holder {
-    margin-bottom: 30px;
-    
-  }
-  
-  .card {
-    border: none; /* Sin borde */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease; /* Efecto de transición suave */
-    
+    background-image: url('https://img.freepik.com/foto-gratis/composicion-accesorios-medico_23-2147652320.jpg?w=1060&t=st=1704005977~exp=1704006577~hmac=ae96e25e280d9f1a5cded196261eee7486fa5663e0cf69dd7711ee7d7dc5ba41');
+    background-size: cover; /* Cubre completamente el contenedor sin deformarse */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene la imagen fija mientras se desplaza */
 }
-  
-  .card:hover {
+
+.title-holder {
+    text-align: center;
+    margin-bottom: 5vh; /* Ajusta el margen inferior de manera relativa */
+    margin-top: 5vh; /* Ajusta el margen superior de manera relativa */
+}
+
+
+.title-holder h2 {
+    font-size: 5vw; /* Ajusta el tamaño de la fuente de manera relativa */
+    margin-bottom: 2vh; /* Ajusta el margen inferior de manera relativa */
+    color: #007bff; /* Color del título */
+}
+
+.subtitle {
+    font-size: 2vw; /* Ajusta el tamaño de la fuente de manera relativa */
+    color: #6c757d; /* Color del subtítulo */
+}
+
+/* Estilos para las tarjetas de los profesionales */
+.holder {
+    margin-bottom: 5vh; /* Ajusta el margen inferior de manera relativa */
+    margin-top: 2vh; /* Ajusta el margen superior de manera relativa */
+}
+
+.card {
+    border: none; /* Sin borde */
+    border-radius: 2vw; /* Bordes redondeados de manera relativa */
+    box-shadow: 0 0 1.5vw rgba(0, 0, 0, 0.1); /* Sombra suave de manera relativa */
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card:hover {
     transform: scale(1.05); /* Escala al hacer hover */
-  }
-  
-  .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  .card-body {
-    padding: 20px;
+}
+
+.card-img-top {
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+.card-body {
+    padding: 2vh; /* Ajusta el espaciado interno de manera relativa */
+    flex-grow: 1;
+}
+
+.card-title {
     
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 1.2rem;
+        font-size: clamp(1.5vw, 16px, 3vw); /* Rango para el tamaño de la fuente */
+        font-weight: bold;
+        margin-bottom: 1vh; /* Ajusta el margen inferior de manera relativa*/
+    text-align: center; /* Centra el texto */
+}
+
+.card-text {
+    font-size: 1.5vw; /* Ajusta el tamaño de la fuente de manera relativa */
     color: #6c757d; /* Color del texto */
-  }
-  
-  .btn-info {
+    text-align: center; /* Centra el texto */
+}
+
+.btn-info {
     background-color: #17a2b8; /* Color del botón */
     border: none;
-  }
-  
-  .btn-info:hover {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+}
+
+.btn-info:hover {
     background-color: #138496; /* Color al hacer hover sobre el botón */
-  }
-  
+}
