@@ -28,7 +28,7 @@ const onScroll = () =>{
 
 
     return (
-        <Navbar expand="lg" variant='black' className={scrolled ? 'scrolled': ''}>
+        <Navbar expand="lg" variant='black' className={scrolled ? 'scrolled': ''} sticky="top">
         <Container>
             <Navbar.Brand href="#home">
                 <img src={logo} width="100" alt='Logo' />
