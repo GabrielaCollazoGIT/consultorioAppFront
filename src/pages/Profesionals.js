@@ -7,7 +7,12 @@ const [doctors, setDoctors] = useState([]);
     
         const fetchDoctors = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/doctors");
+                const response = await fetch("http://localhost:5000/api/doctors",{  // este fetch apunta al backend para login, mediante la ruta url
+                method:'GET',
+                headers: {
+                Authorization: "Bearer " + localStorage.getItem('token'),
+                },
+                })   
                 const data = await response.json();
                 setDoctors(data); 
                 console.log(data);
