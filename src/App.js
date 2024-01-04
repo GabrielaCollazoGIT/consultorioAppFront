@@ -9,6 +9,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import { NavBar } from './components/NavBar';
 import './App.css';
 import NewDoctor from './pages/NewDoctor';
+import Especialities from './pages/Especialities';
 function App() {
 
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route  element = { <ProtectedRoute />}>
           <Route path='/doctor' element = {<Profesionals/>}/>
           <Route path='/doctors/new' element = {<NewDoctor/>}/>
-          <Route path='/especialidades' element = {''}/>
+          <Route path='/especialidades' element = {<Especialities/>}/>
           <Route path='/turnos' element = {''}/>
 
           </Route>
